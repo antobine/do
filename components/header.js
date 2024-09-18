@@ -47,7 +47,7 @@ export default function Header() {
             { title: "El Equipo", route: "#el-equipo" },
           ].map(({ route, title }) => (
             <li className="my-12 md:my-0 md:ml-6" key={title}>
-              <Link href={route} className="block">
+              <Link href={route} passHref className="block">
                 {title}
               </Link>
             </li>

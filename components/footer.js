@@ -58,14 +58,14 @@ export default function Footer() {
                   stroke="#999DA0"
                   strokeWidth="1.182"
                   strokeLinecap="round"
-                  trokeLinejoin="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M1.182 4.419 13 12.69 24.818 4.42"
                   stroke="#999DA0"
                   strokeWidth="1.182"
                   strokeLinecap="round"
-                  trokeLinejoin="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               <p>david@davidolivar.com</p>
