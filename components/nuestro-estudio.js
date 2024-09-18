@@ -5,7 +5,7 @@ export default function NuestroEstudio() {
   return (
     <section
       id="nuestro-estudio"
-      className="lg:flex border border-white border-l-0 border-r-0"
+      className="overflow-x-hidden border border-white border-l-0 border-r-0 lg:flex"
     >
       <div className="bg-main-color w-full py-36 text-white p-6 flex-col items-center justify-center lg:border-r border-white lg:flex lg:py-auto">
         <div className="text-left max-w-lg">

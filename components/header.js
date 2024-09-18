@@ -44,9 +44,9 @@ export default function Header() {
           )}
         >
           {[
-            { title: "Nuestro Estudio", route: "#nuestro-estudio" },
-            { title: "Áreas de Práctica", route: "#areas-de-practica" },
-            { title: "El Equipo", route: "#el-equipo" },
+            { title: "Nuestro Estudio", route: "/#nuestro-estudio" },
+            { title: "Áreas de Práctica", route: "/#areas-de-practica" },
+            { title: "El Equipo", route: "/#el-equipo" },
           ].map(({ route, title }) => (
             <motion.li
               initial={{ opacity: 0, y: -50 }}

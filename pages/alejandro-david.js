@@ -38,6 +38,7 @@ export default function AlejandroDavid() {
               <Link
                 passHref
                 href="https://www.linkedin.com/in/alejandro-david-47753988/"
+                target="_blank"
                 className="rounded-full border border-main-color px-6 py-4 flex gap-4 flex-wrap"
               >
                 <svg
