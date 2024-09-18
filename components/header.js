@@ -7,26 +7,22 @@ export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
   return (
-    <header className="bg-green-600">
+    <header className="">
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
-        <div className="flex items-center">
-          <Image
-            src="/tailwind-logo.svg"
-            width={40}
-            height={40}
-            priority
-            alt="Tailwind CSS logo"
-          />
-
-          <Link href="/">
-            <a className="text-lg md:text-xl font-bold ml-3 text-white">
-              Next.js Starter Tailwind
-            </a>
+        <div className="w-3/4 flex items-center">
+          <Link href="/" className="ml-3">
+            <Image
+              src="/do-david-olivar-logo.svg"
+              width={400}
+              height={87}
+              priority
+              alt="David Olivar Abogados logo"
+            />
           </Link>
         </div>
 
         <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
+          className="flex items-center block px-3 py-2 text-main-color border border-main-color rounded md:hidden"
           onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
         >
           <svg
@@ -41,17 +37,18 @@ export default function Header() {
 
         <ul
           className={cn(
-            "md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto",
+            "font-sans my-12 text-main-color text-center md:flex flex-col md:flex-row md:items-center md:justify-center w-full md:w-auto",
             mobileMenuIsOpen ? `block` : `hidden`
           )}
         >
           {[
-            { title: "Home", route: "/" },
-            { title: "About", route: "/about" },
+            { title: "Nuestro Estudio", route: "#nuestro-estudio" },
+            { title: "Áreas de Práctica", route: "#areas-de-practica" },
+            { title: "El Equipo", route: "#el-equipo" },
           ].map(({ route, title }) => (
-            <li className="mt-3 md:mt-0 md:ml-6" key={title}>
-              <Link href={route}>
-                <a className="block text-white">{title}</a>
+            <li className="my-12 md:my-0 md:ml-6" key={title}>
+              <Link href={route} className="block">
+                {title}
               </Link>
             </li>
           ))}
