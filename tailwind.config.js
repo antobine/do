@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-image-main": "url('/main-hero-image.jpg')",
+        "hero-image-main": "url('/main-hero-lg.jpg')",
+        "hero-image-main-md": "url('/main-hero-md.jpg')",
         "hero-image-main-sm": "url('/main-hero-sm.jpg')",
         "areas-practica": "url('/areas-practica.jpg')",
         "facultad-derecho": "url('/facultad-derecho.jpg')",

@@ -26,6 +26,7 @@ export default function IgnacioOlivar() {
             </p>
 
             <Link
+              passHref
               href="https://www.linkedin.com/in/ignacio-olivar-562b9ba2/"
               className="rounded-full border border-main-color px-6 py-4 flex gap-4 flex-wrap"
             >

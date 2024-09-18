@@ -36,6 +36,7 @@ export default function AlejandroDavid() {
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <Link
+                passHref
                 href="https://www.linkedin.com/in/alejandro-david-47753988/"
                 className="rounded-full border border-main-color px-6 py-4 flex gap-4 flex-wrap"
               >

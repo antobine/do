@@ -76,7 +76,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <ul className="flex flex-col justify-center gap-4 pt-12  text-white border-white border-t md:px-6 lg:pt-0 lg:border-l lg:pl-6">
+        <ul className="flex flex-col justify-center gap-4 pt-12  text-white border-white border-t md:px-6 lg:pt-0 lg:border-l lg:border-t-0 lg:pl-6">
           <li>
             <Link href="/#nuestro-estudio">Nuestro Estudio</Link>
           </li>

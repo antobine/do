@@ -12,8 +12,8 @@ export default function NuestroEstudio() {
           <motion.p
             className="text-2xl text-white mb-8"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
           >
             Nuestro estudio se dedica con exclusividad al ejercicio del derecho
             penal.
@@ -27,9 +27,9 @@ export default function NuestroEstudio() {
             />
             <motion.p
               className="text-lg"
-              initial={{ opacity: 0, x: 250 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
             >
               Ofrecemos nuestro servicio especializado de representación
               judicial y consultoría.
@@ -44,9 +44,9 @@ export default function NuestroEstudio() {
             />
             <motion.p
               className="text-lg"
-              initial={{ opacity: 0, x: 250 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.5, duration: 0.6, ease: "easeInOut" }}
             >
               Confidencialidad, relación personal y rigor profesional son
               nuestro compromiso.

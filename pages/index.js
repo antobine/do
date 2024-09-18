@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function IndexPage() {
   return (
     <div>
-      <div className="bg-almost-white flex flex-col min-h-screen bg-hero-image-main-sm bg-no-repeat bg-contain bg-bottom bg-fixed lg:bg-cover lg:bg-hero-image-main">
+      <div className="bg-almost-white flex flex-col min-h-screen bg-hero-image-main-sm bg-no-repeat bg-contain bg-bottom bg-fixed lg:bg-hero-image-main lg:bg-[length:auto_100%] lg:bg-right">
         <Header />
         <main className="w-full flex-1 flex flex-col lg:justify-center lg:container px-6 py-6 mx-auto md:py-12">
           <h1 className="text-xl mb-12 text-main-color py-3 mt-24 lg:my-auto md:text-5xl">
@@ -38,7 +38,7 @@ export default function IndexPage() {
               ease: "easeInOut", // Smooth easing for the motion
             }}
           >
-            <Link href="#nuestro-estudio">
+            <Link href="#nuestro-estudio" passHref>
               <Image
                 src="/down-icon.svg"
                 alt="Scroll"
@@ -56,13 +56,13 @@ export default function IndexPage() {
 
       <section
         id="areas-de-practica"
-        className="bg-areas-practica bg-contain bg-top bg-no-repeat border bg-main-color pt-24 pb-12 border-white border-l-0 border-r-0"
+        className="bg-areas-practica bg-contain bg-top bg-no-repeat border bg-main-color pt-24 pb-12 border-white border-l-0 border-r-0 lg:bg-[length:100%_auto]"
       >
         <div className="py-12 max-w-5xl w-full mx-auto text-white flex flex-col items-center justify-center border-white lg:py-64">
           <motion.h2
             className="text-4xl text-white p-3 mb-6 my-auto md:text-5xl"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             Áreas de práctica
@@ -72,48 +72,48 @@ export default function IndexPage() {
             <motion.li
               className="pill"
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
             >
               Derecho Penal en <span className="font-bold">General</span>
             </motion.li>
             <motion.li
               className="pill"
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
             >
               Derecho Penal en <span className="font-bold">Tributario</span>
             </motion.li>
             <motion.li
               className="pill"
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9, duration: 0.6, ease: "easeOut" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
             >
               Derecho Penal en <span className="font-bold">Económico</span>
             </motion.li>
             <motion.li
               className="pill"
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.3, duration: 0.6, ease: "easeOut" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.6, ease: "easeOut" }}
             >
               Lavado de Activos
             </motion.li>
             <motion.li
               className="pill"
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.6, duration: 0.6, ease: "easeOut" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
             >
               Derecho Penal en <span className="font-bold">Cambiario</span>
             </motion.li>
             <motion.li
               className="pill"
               initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.9, duration: 0.6, ease: "easeOut" }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2, duration: 0.6, ease: "easeOut" }}
             >
               Responsabilidad Penal de las Personas Jurídicas
             </motion.li>
@@ -126,18 +126,18 @@ export default function IndexPage() {
           <motion.h2
             className="text-4xl text-main-color p-3 mb-6 my-auto md:text-5xl"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             El Equipo
           </motion.h2>
 
           <div className="md:flex gap-6">
-            <Link href="/alejandro-david">
+            <Link href="/alejandro-david" passHref>
               <motion.div
                 className="team-member mb-6 lg:mb-0"
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
                 <Image
@@ -154,11 +154,11 @@ export default function IndexPage() {
                 </div>
               </motion.div>
             </Link>
-            <Link href="/ignacio-olivar">
+            <Link href="/ignacio-olivar" passHref>
               <motion.div
                 className="team-member mb-6 lg:mb-0"
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
               >
                 <Image

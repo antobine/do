@@ -3,14 +3,16 @@ import { useState } from "react";
 import cn from "classnames";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
   return (
     <header className="">
       <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
-        <div className="w-3/4 flex items-center">
-          <Link href="/" className="ml-3">
+        <div className="w-3/4 flex items-center lg:w-auto">
+          <Link href="/" className="ml-3" passHref>
             <Image
               src="/do-david-olivar-logo.svg"
               width={400}
@@ -22,7 +24,7 @@ export default function Header() {
         </div>
 
         <button
-          className="flex items-center block px-3 py-2 text-main-color border border-main-color rounded md:hidden"
+          className="items-center block px-3 py-2 text-main-color border border-main-color rounded md:hidden"
           onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
         >
           <svg
@@ -46,11 +48,17 @@ export default function Header() {
             { title: "Áreas de Práctica", route: "#areas-de-practica" },
             { title: "El Equipo", route: "#el-equipo" },
           ].map(({ route, title }) => (
-            <li className="my-12 md:my-0 md:ml-6" key={title}>
+            <motion.li
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="my-12 md:my-0 md:ml-6"
+              key={title}
+            >
               <Link href={route} passHref className="block">
                 {title}
               </Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
