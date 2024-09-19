@@ -75,7 +75,7 @@ export default function IndexPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
             >
-              Derecho Penal en <span className="font-bold">General</span>
+              Derecho Penal <span className="font-bold">General</span>
             </motion.li>
             <motion.li
               className="pill"
@@ -83,7 +83,7 @@ export default function IndexPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
             >
-              Derecho Penal en <span className="font-bold">Tributario</span>
+              Derecho Penal <span className="font-bold">Tributario</span>
             </motion.li>
             <motion.li
               className="pill"
@@ -91,7 +91,7 @@ export default function IndexPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
             >
-              Derecho Penal en <span className="font-bold">Económico</span>
+              Derecho Penal <span className="font-bold">Económico</span>
             </motion.li>
             <motion.li
               className="pill"
@@ -107,7 +107,7 @@ export default function IndexPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
             >
-              Derecho Penal en <span className="font-bold">Cambiario</span>
+              Derecho Penal <span className="font-bold">Cambiario</span>
             </motion.li>
             <motion.li
               className="pill"

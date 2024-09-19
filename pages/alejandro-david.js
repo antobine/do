@@ -87,7 +87,10 @@ export default function AlejandroDavid() {
               En el año 2007 egresó de la Universidad Austral con el título de{" "}
               <span className="font-bold">Especialista en Derecho Penal</span> y
               en el año 2011 obtuvo el título de{" "}
-              <span className="font-bold">Magíster en Derecho Penal</span>.
+              <span className="font-bold">
+                <i>Magister</i> en Derecho Penal
+              </span>
+              .
             </p>
             <p className="text-lg mb-4">
               Doctor en Derecho de la Universidad Austral, aprobado con la

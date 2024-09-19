@@ -93,7 +93,7 @@ export default function IgnacioOlivar() {
                 Justicia Criminal y Correccional en el Poder Judicial de la
                 Nación
               </span>{" "}
-              durante 10 años, hasta su paso al sector privado.
+              durante 10 años.
             </p>
           </motion.div>
         </section>
