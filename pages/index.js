@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 export default function IndexPage() {
   return (
     <div>
-      <div className="bg-almost-white flex flex-col min-h-screen bg-hero-image-main-sm bg-no-repeat bg-contain bg-bottom bg-fixed lg:bg-hero-image-main lg:bg-[length:auto_100%] lg:bg-right">
+      <div className="bg-almost-white flex flex-col min-h-screen bg-hero-image-main-sm bg-no-repeat bg-contain bg-bottom lg:bg-fixed lg:bg-hero-image-main lg:bg-[length:auto_100%] lg:bg-right">
         <Header />
         <main className="w-full flex-1 flex flex-col lg:justify-center lg:container px-6 py-6 mx-auto md:py-12">
-          <h1 className="text-xl mb-12 text-main-color py-3 mt-24 lg:my-auto md:text-5xl">
+          <h1 className="text-xl mb-12 text-main-color py-3 mt-12 lg:my-auto md:text-5xl">
             <motion.span
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}

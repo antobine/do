@@ -24,11 +24,7 @@ export default function AlejandroDavid() {
               <span className="text-xl block">H. Alejandro</span>David
             </motion.h2>
 
-            <p className="mb-4">
-              david@david-olivar.com
-              <br />
-              11 7853 0505
-            </p>
+            <p className="mb-4">david@david-olivar.com</p>
 
             <motion.div
               initial={{ opacity: 0, y: 50 }}

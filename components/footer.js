@@ -43,7 +43,7 @@ export default function Footer() {
                   fill="#999DA0"
                 />
               </svg>
-              <p>david-olivar.com.ar</p>
+              <p>davidolivar.com.ar</p>
             </li>
             <li className="flex gap-2 lg:gap-6">
               <svg
@@ -68,10 +68,10 @@ export default function Footer() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p>david@davidolivar.com</p>
+              <p>david@david-olivar.com</p>
             </li>
             <li className="flex gap-6">
-              <p>olivar@davidolivar.com</p>
+              <p>olivar@david-olivar.com</p>
             </li>
           </ul>
         </div>

@@ -19,11 +19,7 @@ export default function IgnacioOlivar() {
               <span className="text-xl block">Ignacio</span>Olivar
             </h2>
 
-            <p className="mb-4">
-              olivar@david-olivar.com
-              <br />
-              11 5400 2499
-            </p>
+            <p className="mb-4">olivar@david-olivar.com</p>
 
             <Link
               passHref
@@ -83,7 +79,7 @@ export default function IgnacioOlivar() {
                 Facultad de Derecho de la Universidad Austral
               </span>
               . Profesor de Derecho Penal II y Práctica Profesional II en la
-              <span className="font-bold">UNLAM</span>.
+              <span className="font-bold"> UNLAM</span>.
             </p>
             <p className="text-lg mb-4">
               Autor de{" "}
