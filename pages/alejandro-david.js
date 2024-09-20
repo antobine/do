@@ -87,16 +87,16 @@ export default function AlejandroDavid() {
               En el año 2007 egresó de la Universidad Austral con el título de{" "}
               <span className="font-bold">Especialista en Derecho Penal</span> y
               en el año 2011 obtuvo el título de{" "}
-              <span className="font-bold">
-                <i>Magister</i> en Derecho Penal
-              </span>
-              .
+              <span className="font-bold">Magister en Derecho Penal</span>.
             </p>
             <p className="text-lg mb-4">
               Doctor en Derecho de la Universidad Austral, aprobado con la
-              calificación <span className="font-bold">suma cum laude</span>.
-              Tesis doctoral dirigida por el Prof. Dr. Urs Kindhäuser, Director
-              del Departamento de Derecho Penal de la{" "}
+              calificación{" "}
+              <span className="font-bold">
+                <i>suma cum laude</i>
+              </span>
+              . Tesis doctoral dirigida por el Prof. Dr. Urs Kindhäuser,
+              Director del Departamento de Derecho Penal de la{" "}
               <span className="font-bold">Universidad de Bonn, Alemania</span>.
             </p>
             <p className="text-lg mb-4">
