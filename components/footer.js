@@ -14,7 +14,7 @@ export default function Footer() {
             className="w-100 mb-6"
           />
           <div className="lg:flex gap-6 mb-4">
-            <p>Reconquista 336. Piso 6to P C1003. Ciudad de Buenos Aires.</p>
+            <p>Uruguay 572 3° A. Ciudad de Buenos Aires.</p>
             <div className="flex gap-2">
               <svg
                 width="24"
