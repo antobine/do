@@ -13,11 +13,7 @@ const personJsonLd = {
   url: "https://www.davidolivar.com.ar/alejandro-david",
   image: "https://www.davidolivar.com.ar/alejandro-david.png",
   jobTitle: "Socio",
-  worksFor: {
-    "@type": "LegalService",
-    name: "David & Olivar Abogados",
-    url: "https://www.davidolivar.com.ar",
-  },
+  worksFor: { "@id": "https://www.davidolivar.com.ar/#organization" },
   alumniOf: ["Universidad de Buenos Aires", "Universidad Austral"],
   email: "david@david-olivar.com",
   sameAs: ["https://www.linkedin.com/in/alejandro-david-47753988/"],
@@ -45,14 +41,14 @@ export default function AlejandroDavid() {
         </div>
         <section className="lg:flex lg:container mx-auto gap-6 pb-48">
           <div className="min-w-80 mb-6">
-            <motion.h2
+            <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="mb-3 text-5xl"
             >
               <span className="text-xl block">H. Alejandro</span>David
-            </motion.h2>
+            </motion.h1>
 
             <p className="mb-4">david@david-olivar.com</p>
 

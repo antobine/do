@@ -7,12 +7,15 @@ const SITE_NAME = "David & Olivar Abogados";
 const legalServiceJsonLd = {
   "@context": "https://schema.org",
   "@type": "LegalService",
+  "@id": "https://www.davidolivar.com.ar/#organization",
   name: "David & Olivar Abogados",
   description: "Estudio jurídico especializado en derecho penal.",
   url: "https://www.davidolivar.com.ar",
   logo: "https://www.davidolivar.com.ar/do-david-olivar-logo.svg",
   image: "https://www.davidolivar.com.ar/og-default.png",
+  sameAs: ["https://www.linkedin.com/company/david-olivar-abogados/"],
   telephone: "+541154002499",
+  priceRange: "$$$",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Uruguay 572, 3° A",

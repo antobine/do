@@ -13,11 +13,7 @@ const personJsonLd = {
   url: "https://www.davidolivar.com.ar/ignacio-olivar",
   image: "https://www.davidolivar.com.ar/ignacio-olivar.png",
   jobTitle: "Socio",
-  worksFor: {
-    "@type": "LegalService",
-    name: "David & Olivar Abogados",
-    url: "https://www.davidolivar.com.ar",
-  },
+  worksFor: { "@id": "https://www.davidolivar.com.ar/#organization" },
   alumniOf: ["Universidad de Buenos Aires", "Universidad Austral"],
   email: "olivar@david-olivar.com",
   sameAs: ["https://www.linkedin.com/in/ignacio-olivar-562b9ba2/"],
@@ -45,9 +41,9 @@ export default function IgnacioOlivar() {
         </div>
         <section className="lg:flex lg:container mx-auto gap-6 pb-48">
           <div className="min-w-80 mb-6">
-            <h2 className="mb-3 text-5xl">
+            <h1 className="mb-3 text-5xl">
               <span className="text-xl block">Ignacio</span>Olivar
-            </h2>
+            </h1>
 
             <p className="mb-4">olivar@david-olivar.com</p>
 
