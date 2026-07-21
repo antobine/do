@@ -1,13 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "/components/header";
-import NuestroEstudio from "/components/nuestro-estudio";
+import Header from "@/components/header";
+import NuestroEstudio from "@/components/nuestro-estudio";
+import Seo from "@/components/Seo";
 
 import { motion } from "framer-motion";
 
 export default function IndexPage() {
   return (
     <div>
+      <Seo
+        title="David & Olivar Abogados | Especialistas en Derecho Penal"
+        description="Estudio especializado en derecho penal en Buenos Aires: penal económico, tributario, cambiario, lavado de activos y responsabilidad penal empresaria."
+        path="/"
+        ogImage="/og-default.png"
+      />
       <div className="bg-almost-white flex flex-col min-h-screen bg-hero-image-main-sm bg-no-repeat bg-contain bg-bottom lg:bg-fixed lg:bg-hero-image-main lg:bg-[length:auto_100%] lg:bg-right">
         <Header />
         <main className="w-full flex-1 flex flex-col lg:justify-center lg:container px-6 py-6 mx-auto md:py-12">

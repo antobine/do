@@ -1,13 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "/components/header";
-import NuestroEstudio from "/components/nuestro-estudio";
+import Header from "@/components/header";
+import NuestroEstudio from "@/components/nuestro-estudio";
+import Seo from "@/components/Seo";
 
 import { motion } from "framer-motion";
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Alejandro David",
+  url: "https://www.davidolivar.com.ar/alejandro-david",
+  image: "https://www.davidolivar.com.ar/alejandro-david.png",
+  jobTitle: "Socio",
+  worksFor: {
+    "@type": "LegalService",
+    name: "David & Olivar Abogados",
+    url: "https://www.davidolivar.com.ar",
+  },
+  alumniOf: ["Universidad de Buenos Aires", "Universidad Austral"],
+  email: "david@david-olivar.com",
+  sameAs: ["https://www.linkedin.com/in/alejandro-david-47753988/"],
+  knowsAbout: [
+    "Derecho Penal",
+    "Derecho Penal Económico",
+    "Derecho Penal Tributario",
+  ],
+};
 
 export default function AlejandroDavid() {
   return (
     <div className="">
+      <Seo
+        title="Alejandro David | Abogado Penalista – David & Olivar"
+        description="Alejandro David, abogado penalista, doctor en Derecho (Universidad Austral). Socio del estudio David & Olivar, Buenos Aires."
+        path="/alejandro-david"
+        ogImage="/og-alejandro-david.png"
+        jsonLd={personJsonLd}
+      />
       <div className="bg-almost-white bg-about-law bg-cover lg:bg-contain bg-right-bottom bg-no-repeat px-6 lg:px-0">
         <Header />
         <div className="mx-auto mt-12 mb-12 lg:container">

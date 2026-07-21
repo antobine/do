@@ -1,13 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "/components/header";
-import NuestroEstudio from "/components/nuestro-estudio";
+import Header from "@/components/header";
+import NuestroEstudio from "@/components/nuestro-estudio";
+import Seo from "@/components/Seo";
 
 import { motion } from "framer-motion";
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ignacio Olivar",
+  url: "https://www.davidolivar.com.ar/ignacio-olivar",
+  image: "https://www.davidolivar.com.ar/ignacio-olivar.png",
+  jobTitle: "Socio",
+  worksFor: {
+    "@type": "LegalService",
+    name: "David & Olivar Abogados",
+    url: "https://www.davidolivar.com.ar",
+  },
+  alumniOf: ["Universidad de Buenos Aires", "Universidad Austral"],
+  email: "olivar@david-olivar.com",
+  sameAs: ["https://www.linkedin.com/in/ignacio-olivar-562b9ba2/"],
+  knowsAbout: [
+    "Derecho Penal",
+    "Derecho Penal Económico",
+    "Derecho Penal Tributario",
+  ],
+};
 
 export default function IgnacioOlivar() {
   return (
     <div className="">
+      <Seo
+        title="Ignacio Olivar | Abogado Penalista – David & Olivar"
+        description="Ignacio Olivar, abogado penalista (UBA) y magíster en Derecho Penal (Universidad Austral). Socio del estudio David & Olivar, Buenos Aires."
+        path="/ignacio-olivar"
+        ogImage="/og-ignacio-olivar.png"
+        jsonLd={personJsonLd}
+      />
       <div className="bg-almost-white bg-about-law bg-contain bg-right-bottom bg-no-repeat px-6 lg:px-0">
         <Header />
         <div className="lg:container mx-auto mt-12 mb-12">
