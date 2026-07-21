@@ -1,22 +1,16 @@
 import "../css/index.css";
 import Head from "next/head";
-import Layout from "/components/layout";
+import Layout from "@/components/layout";
 
-import { fontClasses } from "app/fonts";
+import { fontClasses } from "@/lib/fonts";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
+        {/* Fallback mínimo. Cada página define su propio <head> vía <Seo>,
+            que pisa estos valores gracias a los `key` de los metas. */}
         <title>David & Olivar Abogados</title>
-        <meta name="description" content="Especialistas en Derecho Penal" />
-
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=DM+Serif+Display&display=swap"
-          rel="stylesheet"
-        /> */}
 
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
